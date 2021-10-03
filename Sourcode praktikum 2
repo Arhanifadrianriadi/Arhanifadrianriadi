@@ -1,0 +1,21 @@
+"""
+#Nama  : Arhanif adrian riadi
+#Nim   : 065002100018
+#Prodi : Sistem Informasi
+#Tugas : Praktikum (2) Latihan 2
+""" 
+
+import math 
+print("Selamat datang di source code untuk menghitung jarak")
+print("Source code ini berguna untuk menghitung jarak")
+A1=float(input("Masukkan lattitude koordinat pertama ="))
+A2=float(input("Masukkan longitude koordinat pertama ="))
+A3=float(input("Masukkan lattitude koordinat kedua ="))
+A4=float(input("Masukkan longitude koordinat kedua ="))
+
+A1=(A4-A2)
+A2=(A3-A1)
+s=math.sin(math.radians(A1/2))*2+math.cos(math.radians(A1))*math.cos(math.radians(A3))*math.sin(math.radians(A2/2))*2
+t=2*math.asin(math.sqrt(s))          
+u=6371.01*t
+print( u, "kilometer")
