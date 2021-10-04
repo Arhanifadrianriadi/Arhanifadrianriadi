@@ -1,0 +1,24 @@
+"""
+#Nama  : Arhanif adrian riadi
+#Nim   : 065002100018
+#Prodi : Sistem Informasi
+#Tugas : Praktikum (3)
+
+"""
+
+a = int(input("Masukkan sisi A :"))
+b = int(input("Masukkan sisi B :"))
+c = int(input("Masukkan sisi C :"))
+
+from math import sqrt as akar
+if (a == b == c) :
+    print("Merupakan segitiga sama sisi")
+elif (a+b <=c) or (a+c<=b) or (b+c<=a):
+    print('Bukan termasuk segitiga')
+elif (a == b or a == c or b == c) :
+    print("Merupakan segitiga sama kaki")    
+elif(a == akar((b*b)+(c*c))) or (b == akar((c*c)+(a*a))) or (c == akar((b*b)+(a*a))):
+   print('Ini Segitiga Siku-siku')   
+else:
+    print('\n\nIni Segitiga Sembarang')
+    
