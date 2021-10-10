@@ -1,0 +1,36 @@
+"""
+Nama   : Arhanif adrian riadi
+Nim    : 065002100018
+Prodi  : Sistem informasi
+Materi : Control strukture
+"""
+import math
+
+print("Nilai Persamaan Kuadrat Dan Determinan")
+A1=int(input("Input Nilai A1 :"))
+A2=int(input("Input Nilai A2 :"))
+A3=int(input("Input Nilai A3 :"))
+
+D =(A2 * A2) - (4 * A1 * A3)
+if (A1 == 0):
+    print("Bukan Persamaan Kuadrat")
+    
+elif(D > 0) :
+        x1 = (-A2 + math.sqrt(D)) / (2 * A1)
+        x2 = (-A2 + math.sqrt(D)) / (2 * A1)
+        print("Jenis Akar Yang Berbeda")
+        print("persamaan kuadratnya adalah",x1,"dan",x2)
+        print("Determinan :" , D)
+        
+elif(D == 0) :
+        x1 = (-A2) / (2 * A1)
+        x2 = (-A2) / (2 * A1)
+        print("Adalah jenis akar yang kembar")
+        print("persamaan kuadratnya adalah",x1,"dan",x2)
+        print("Determinan :" , D)
+              
+elif(D < 0) : 
+       print("Adalah Akar Imaginer")
+       print("Determinan :" , D)
+       print("Akar x1 = -'B' + Akar',D,/B * A")
+       print("Akar x2 = -'B' - Akar',D,/B * A")
