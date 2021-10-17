@@ -1,0 +1,33 @@
+"""
+Nama   : Arhanif adrian riadi
+Nim    : 065002100018
+Prodi  : Sistem Informasi
+Materi : Algoritma dan pemrograman
+"""
+
+
+
+print('Masukkan -1 untuk menghentikan program ini')
+z = True
+while z == True:
+    M = int(input('Input bulan yang ingin dimasukkan (1-12): '))
+    if M > 12 or M <= -2 or M == 0:
+        print('Invalid value entered: ', M, '')
+    elif M == 1 or M == 3 or M == 5 or M == 7 or M == 8 or M == 10 or M == 12:
+        print('Bulan yang anda masukkan memiliki 31 hari')
+        print('Masukkan -1 untuk menghentikan program')
+    elif M == 2:
+        Y = int(input('Input tahun yang ingin dimasukkan: '))
+        if (Y % 4 == 0 and M == 2):
+             print('Bulan yang anda masukkan memiliki 29 hari')
+             print('Masukkan -1 untuk menghentikan program')
+        else:
+            print('Bulan yang anda masukkan memiliki 28 hari')
+            print('masukkan -1 untuk menghentikan program')
+    elif M == 4 or M == 6 or M == 9 or M == 11:
+        print('Bulan yang anda masukkan memiliki 30 hari')
+        print('Masukkan -1 untuk menghentikan program')
+        
+    elif M == -1:
+        z = False
+        print('Thanks for use this program,See you next time')
