@@ -1,0 +1,37 @@
+"""
+Nama   : Arhanif adrian riadi
+Nim    : 065002100018
+Prodi  : Sistem Informasi
+Materi : Menghitung harga tiket masuk kebun binatang
+"""
+
+z = 0
+jumlah = 0
+P = 0
+
+while(z!='') :
+    z=int(input("Input Usia kamu: "))
+    P+=1
+    print("Input 0 Untuk Menghitungnya ")
+    
+    if( z == 0 ) :
+        break;
+    elif( z <= 2 ) :
+        print("Gratis!!")
+        jumlah += 0
+        print("Menjalankan jumlah total", jumlah)
+    elif( z >= 3 and z <= 12) :
+        jumlah += 14.00
+        print("$14.00")
+        print("Menjalankan jumlah total", jumlah)
+    elif( z >= 66 ) :
+        jumlah += 18.00
+        print("$18.00")
+        print("Menjalankan jumlah total", jumlah)
+    else:
+        jumlah += 23.00
+        print("$23.00")
+        print("Menjalankan jumlah total", jumlah)
+        
+uang=int(input("Input total uang yang ingin dimasukkan : "))  
+print("Menjalankan jumlah kembalian nya : ", uang-jumlah)
