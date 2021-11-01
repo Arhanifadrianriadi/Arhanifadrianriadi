@@ -1,0 +1,52 @@
+"""
+Nama   : Arhanif adrian riadi
+Nim    : 065002100018
+Prodi  : Sistem Informasi
+Materi : Fungsi pada pemrograman python
+"""
+#Fungsi python & Menghitung Nilai siswa
+
+def nilai_siswa ():
+    skor = 0    
+    ulang = 1
+    nomor = 0
+    while ulang == 1:
+        nomor += 1
+        z = str(input('Jika sudah tekan (ENTER) untuk mencari rata-rata!\nNilai siswa: '))
+        if z == '': 
+            nomor -= 1
+            ulang = 0
+        else:
+            if z == 'A': 
+                skor += float(4)
+                a = '4'
+            elif z == 'A-':
+                skor += float(3.75)
+                a = '3,75'
+            elif z == 'B+':
+                skor += float(3.50)
+                a = '3,5'
+            elif z == 'B':
+                skor += float(3.00)
+                a = '3'
+            elif z == 'B-':
+                skor += float(2.75)
+                a = '2,75'
+            elif z == 'C+':
+                skor += float(2.50)
+                a = '2,5'
+            elif z == 'C':
+                skor += float(2.00)
+                a = '2'
+            elif z == 'C-':
+                skor += float(1.75)
+                a = '1,75'
+            else:
+                print('data infalid')
+                nomor -= 1
+                a = 'TAK TERDEFINISI'
+            print(f"nilai ke-{nomor} = {a}")
+    rata2 = skor / nomor
+    return rata2
+
+print("Rata-Rata Nilai: ", nilai_siswa())
