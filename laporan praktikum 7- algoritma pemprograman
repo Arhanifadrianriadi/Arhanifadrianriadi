@@ -1,0 +1,33 @@
+"""
+Nama   : Arhanif adrian riadi
+Nim    : 065002100018
+Prodi  : Sistem Informasi
+Materi : Fungsi pada pemrograman python
+"""
+def month( Mon = 0):
+    z = True
+    while z == True:
+        Mon = int(input("input dari bulan ( 1- 12 ): "))
+        if Mon == 1 or Mon == 3 or Mon == 5 or Mon == 7 or Mon == 8 or Mon == 10 or Mon == 12:
+            print("bulan ini terdapat 31 hari ")
+            print("tekan 0 untuk menghentikan program ")
+            
+        elif Mon == 2:
+            year = int(input('input tahun: '))
+            if (year % 4 == 0 and Mon == 2):
+                print("bulan ini terdapat 29 hari ")
+                print("tekan 0 untuk menghentikan program ")
+                
+            else:
+                print("bulan ini terdapat 28 hari ")
+                print("tekan 0 untuk menghentikan program ")
+                
+        elif Mon == 4 or Mon == 6 or Mon == 9 or Mon == 11:
+            print("bulan ini terdapat 30 hari ")
+            print("tekan 0 untuk menghentikan program ")
+            
+        elif Mon == 0:
+            z = False
+            print("thankyou for use this program")
+            
+days = month()
