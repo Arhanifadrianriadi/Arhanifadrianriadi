@@ -1,0 +1,26 @@
+"""
+Nama    :Arhanif Adrian Riadi
+NIM     :065002100018
+Prodi   :Sistem Informasi
+Materi  :Menghitung Bil. Prima
+"""
+
+def bil_prima(angka):
+    if angka > 1:
+        prima(angka)
+    else:
+        print(angka,"ini merupakan bil prima")
+def prima(angka):
+    for i in range(2,angka):
+             if (angka % i) == 0:
+                 print(angka,"ini bukan bil prima")
+                 print("karena", i,"dikalikan",angka//i,"hasilnya adalah",angka)
+                 break
+
+    else:
+        print(angka,"ini merupakan bil prima")
+    
+Z = 1
+while Z == 1 :
+    angka = int(input('Masukkan Bilangan Nya : '))
+    bil_prima(angka)
