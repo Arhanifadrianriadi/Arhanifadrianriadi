@@ -1,0 +1,21 @@
+"""
+Nama    :Arhanif adrian riadi
+Nim     :065002100018
+Prodi   :Sistem informasi
+Materi  :Recursive Function
+"""
+
+def penjumlahan(angka = 0, J = 0, n = 1):
+    if J <= 0:
+        return 0
+    else:
+        angka = int(input("Masukkan bilangan ke-" + str(n) + ": "))
+        if(J == 1):
+            return angka
+        else:
+            n+=1
+            return angka + penjumlahan(angka, J-1, n)
+        
+JJ = int(input("Input jumlah yang ingin dimasukkan : "))  
+N  = penjumlahan(J= JJ)
+print("Hasil penjumlahan nya adalah: " + str(N))
